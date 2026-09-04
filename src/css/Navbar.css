@@ -1,69 +1,49 @@
 .navbar {
-  background-color: #000000;
-  padding: 1rem 2rem;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.6));
+  padding: 16px 40px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  justify-content: space-between;
   position: sticky;
   top: 0;
   z-index: 100;
-  animation: navbarFadeIn 0.5s ease;
+  backdrop-filter: blur(6px);
 }
 
-@keyframes navbarFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.navbar .logo {
+  color: #e50914;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
-.navbar-brand a {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #f40612;
-  text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-  display: inline-block;
-}
-
-.navbar-brand a:hover {
-  transform: scale(1.08);
-  color: #ff4d4d;
-}
-
-.navbar-links {
+.nav-links {
   display: flex;
-  gap: 2rem;
+  gap: 24px;
 }
 
 .nav-link {
-  position: relative;
-  font-size: 1rem;
-  padding: 0.5rem 0.2rem;
-  color: #fff;
+  color: #e5e5e5;
   text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.nav-link::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #f40612;
-  border-radius: 2px;
-  transition: width 0.3s ease;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-  color: #f40612;
+  color: #ffffff;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #e50914;
+  transition: width 0.3s ease;
 }
 
 .nav-link:hover::after {

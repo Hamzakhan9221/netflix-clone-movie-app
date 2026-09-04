@@ -55,9 +55,40 @@
 
 .movies-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 30px 40px;
   width: 100%;
   box-sizing: border-box;
+  background-color: #141414;
+}
+.search-container,
+.search-form {
+  background-color: #141414;
+  padding: 20px 40px 0;
+}
+
+.search-container input,
+.search-form input {
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  color: #fff;
+  padding: 12px 16px;
+  border-radius: 4px;
+}
+
+.search-container button,
+.search-form button {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.search-container button:hover,
+.search-form button:hover {
+  background-color: #f6121d;
 }
