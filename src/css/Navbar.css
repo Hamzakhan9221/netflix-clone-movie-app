@@ -10,14 +10,17 @@
   backdrop-filter: blur(6px);
 }
 
-.navbar .logo {
+.navbar-brand a {
   color: #e50914;
   font-size: 28px;
-  font-weight: 800;
-  letter-spacing: 1px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
 }
 
-.nav-links {
+.navbar-links {
   display: flex;
   gap: 24px;
 }
